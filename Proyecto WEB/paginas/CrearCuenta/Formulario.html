@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            <img src='./img/LogoAnimeGallegox.png' alt="AnimeGallegox">
+        </div>
+
+        <div class="formulario">
+            <div class="boton">
+                <div id="elegir"> </div>
+                <button type="button" class="btn" onclick="login()">Iniciar Sesión</button>
+                <button type="button" class="btn" onclick="registrar()">Registrarse</button>
+            </div>
+
+            <!-- REDES SOCIALES ICON -->
+            <div class="social">
+                <a href="https://twitter.com/crunchyroll_es" target="_blank">
+                    <img src="./img/twitter.png" alt="icono_twitter">
+                </a>
+                <a href="https://www.facebook.com/Crunchyroll.es" target="_blank">
+                    <img src="./img/Facebook.png" alt="icono_facebook">
+                </a>
+                <a href="https://www.instagram.com/crunchyroll_es/" target="_blank">
+                    <img src="./img/insta.png" alt="icono_instagram">
+                </a>
+            </div>
+
+            <!-- INICIAR SESIÓN -->
+            <form id="login" class="grupo">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Recordar Contraseña.</span>
+                <button type="submit" class="submit-btn">Acceder</button>
+            </form>
+
+            <!-- REGISTRARSE -->
+            <form id="registrar" class="grupo">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="email" class="input-field" placeholder="Correo" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Acepto los términos y Condiciones.</span>
+                <button type="submit" class="submit-btn">Registar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- SCROLL -->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("registrar");
+        var z = document.getElementById("elegir");
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+        function registrar() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "120px";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
